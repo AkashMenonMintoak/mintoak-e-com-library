@@ -6,5 +6,5 @@ interface ButtonProps {
     type?: "button";
     color?: string;
 }
-export default function Button({ name, onClickMethod, type, color, }: ButtonProps): JSX.Element;
+export default function Button({ name, onClickMethod, type, color, customClass }: ButtonProps): JSX.Element;
 export {};

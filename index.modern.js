@@ -58,7 +58,8 @@ function Button(_ref) {
     _ref$type = _ref.type,
     type = _ref$type === void 0 ? "button" : _ref$type,
     _ref$color = _ref.color,
-    color = _ref$color === void 0 ? 'default' : _ref$color;
+    color = _ref$color === void 0 ? 'default' : _ref$color,
+    customClass = _ref.customClass;
   var finalStyles = cva(['custom-lib-button'], {
     variants: {
       color: {
@@ -69,9 +70,9 @@ function Button(_ref) {
   });
   return React.createElement("button", {
     type: type,
-    className: finalStyles({
+    className: "" + finalStyles({
       color: color
-    }),
+    }) + (customClass ? " " + customClass : ''),
     onClick: function onClick() {
       return onClickMethod();
     }
