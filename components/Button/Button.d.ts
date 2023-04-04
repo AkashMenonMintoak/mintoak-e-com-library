@@ -1,6 +1,6 @@
 /// <reference types="react" />
 interface ButtonProps {
-    customClass?: any;
+    customClass?: string;
     name: string;
     onClickMethod: any;
     type?: "button";
