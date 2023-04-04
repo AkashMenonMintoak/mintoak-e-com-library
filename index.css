@@ -1,0 +1,77 @@
+/* @import 'tailwindcss/base'; */
+
+.custom-lib-button {
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 12px;
+  font-weight: 500
+}
+
+.custom-lib-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+@media (prefers-color-scheme: dark) {
+  .custom-lib-button {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity))
+  }
+
+  .custom-lib-button:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity))
+  }
+
+  .custom-lib-button:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity))
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-lib-button {
+    font-size: 0.875rem;
+    line-height: 1.25rem
+  }
+}
+
+.custom-lib-default-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.custom-lib-default-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity))
+}
+
+.custom-lib-grey-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.custom-lib-grey-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity))
+}
+
+/* @layer base {
+  button {
+    @apply bg-black opacity-100
+  }
+} */
